@@ -1,4 +1,4 @@
-import config from "../../conf/index.js";
+import config from "../conf/index.js";
 
 //Implementation of fetch call to fetch all reservations
 async function fetchReservations() {

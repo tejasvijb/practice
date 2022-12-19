@@ -58,6 +58,18 @@ function addReservationToTable(reservations) {
     action.innerHTML = `<button class="reservation-visit-button"> <a href = "${
       "/frontend/pages/adventures/detail/?adventure=" + element.adventure
     }">Visit Advenutre </a></button>`;
+
+    tr.appendChild(id)
+    tr.appendChild(name)
+    tr.appendChild(adventure)
+    tr.appendChild(person)
+    tr.appendChild(date)
+    tr.appendChild(price)
+    tr.appendChild(time)
+    tr.appendChild(action)
+
+    document.getElementById("reservation-table").appendChild(tr);
+
   });
 
   //Conditionally render the no-reservation-banner and reservation-table-parent

@@ -64,7 +64,7 @@ function filterByDuration(list, low, high) {
   // TODO: MODULE_FILTERS
   // 1. Filter adventures based on Duration and return filtered list
   let durationlist = list.filter((e) => {
-    return list.filter(e.duration) > low && list.filter(e.duration) < high;
+    return e.duration >= low && e.duration <= high;
   });
   return durationlist;
 }
